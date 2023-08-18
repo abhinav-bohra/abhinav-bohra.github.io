@@ -4,4 +4,4 @@ $(function(){
  $("#footer").load("footer.html");
 });
 
-document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+// document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
