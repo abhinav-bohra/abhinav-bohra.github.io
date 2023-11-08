@@ -1,2 +1,2 @@
 # Personal Portfolio
-Visit https://abhinavbohra.technology/
+Visit https://abhinav-bohra.github.io/
