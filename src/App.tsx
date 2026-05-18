@@ -6,6 +6,7 @@ import {
   Code2,
   ExternalLink,
   Github,
+  Heart,
   Linkedin,
   Mail,
   Menu,
@@ -233,13 +234,13 @@ export function App() {
               <div className="space-y-6">
                 {experiences.map((exp) => (
                   <article key={exp.id} className="relative sm:pl-24">
-                    <div className="absolute left-0 top-5 hidden h-[72px] w-[72px] place-items-center rounded-full border border-neutral-200 bg-neutral-50 p-3 shadow-sm dark:border-sonic-border/70 dark:bg-sonic-canvas sm:grid">
-                      <img src={exp.logo} alt={exp.company} className="max-h-12 max-w-12 rounded-md object-contain" />
+                    <div className="absolute left-0 top-5 hidden h-[72px] w-[72px] place-items-center rounded-full border border-neutral-200 bg-neutral-50 p-1 shadow-sm dark:border-sonic-border/70 dark:bg-sonic-canvas sm:grid">
+                      <img src={exp.logo} alt={exp.company} className="max-h-14 max-w-14 rounded-md object-contain" />
                     </div>
                     <div className="rounded-lg border border-neutral-200 bg-white p-5 dark:border-sonic-border/70 dark:bg-sonic-panel">
                       <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
-                        <div className="grid h-14 w-14 flex-shrink-0 place-items-center rounded-full border border-neutral-200 bg-neutral-50 p-2 dark:border-sonic-border/70 dark:bg-sonic-elevated sm:hidden">
-                          <img src={exp.logo} alt={exp.company} className="max-h-10 max-w-10 rounded-md object-contain" />
+                        <div className="grid h-14 w-14 flex-shrink-0 place-items-center rounded-full border border-neutral-200 bg-neutral-50 p-0.5 dark:border-sonic-border/70 dark:bg-sonic-elevated sm:hidden">
+                          <img src={exp.logo} alt={exp.company} className="max-h-12 max-w-12 rounded-md object-contain" />
                         </div>
                         <div className="min-w-0 flex-1">
                           <div className="flex flex-col gap-2 md:flex-row md:items-start md:justify-between">
@@ -549,7 +550,7 @@ export function App() {
 
             <div className="grid gap-6 md:grid-cols-[1fr_auto] md:items-center">
               <div>
-                <BookOpen className="mb-4 h-5 w-5 text-neutral-500" />
+                <Heart className="mb-4 h-8 w-8 text-red-500" />
                 <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">Thanks for visiting.</h2>
                 <p className="mt-3 max-w-2xl text-sm leading-7 text-neutral-600 dark:text-neutral-400">
                   I am always happy to discuss projects, research ideas, or opportunities to build impactful products.
