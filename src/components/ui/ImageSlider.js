@@ -1,9 +1,0 @@
-import { jsx as _jsx, Fragment as _Fragment, jsxs as _jsxs } from "react/jsx-runtime";
-import { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-export function ImageSlider({ images, basePath, compact = false }) {
-    const [current, setCurrent] = useState(0);
-    const next = () => setCurrent((current + 1) % images.length);
-    const prev = () => setCurrent((current - 1 + images.length) % images.length);
-    return (_jsxs("div", { className: "space-y-3", children: [_jsxs("div", { className: `relative overflow-hidden rounded-md bg-neutral-100 dark:bg-neutral-900 ${compact ? "flex h-52 items-center justify-center" : ""}`, children: [_jsx("img", { src: `${basePath}${images[current]}`, alt: `Screenshot ${current + 1}`, className: compact ? "max-h-full max-w-full object-contain" : "h-auto w-full" }), images.length > 1 && (_jsxs(_Fragment, { children: [_jsx("button", { onClick: prev, className: "absolute left-2 top-1/2 grid h-9 w-9 -translate-y-1/2 place-items-center rounded-md border border-white/20 bg-black/70 text-white backdrop-blur transition-colors hover:bg-black", "aria-label": "Previous image", children: _jsx(ChevronLeft, { className: "h-4 w-4" }) }), _jsx("button", { onClick: next, className: "absolute right-2 top-1/2 grid h-9 w-9 -translate-y-1/2 place-items-center rounded-md border border-white/20 bg-black/70 text-white backdrop-blur transition-colors hover:bg-black", "aria-label": "Next image", children: _jsx(ChevronRight, { className: "h-4 w-4" }) })] }))] }), images.length > 1 && (_jsx("div", { className: "flex justify-center gap-1.5", children: images.map((_, idx) => (_jsx("button", { onClick: () => setCurrent(idx), className: `h-1.5 rounded-full transition-all ${idx === current ? "w-6 bg-neutral-950 dark:bg-white" : "w-1.5 bg-neutral-300 dark:bg-neutral-700"}`, "aria-label": `Go to image ${idx + 1}` }, idx))) }))] }));
-}
