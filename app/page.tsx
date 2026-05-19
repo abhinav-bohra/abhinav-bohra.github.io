@@ -196,12 +196,12 @@ function SkillsSection() {
         </SectionHeading>
 
         <div className="grid gap-6 lg:grid-cols-[minmax(0,360px)_1fr] lg:items-stretch">
-          <div className="relative bg-white dark:bg-sonic-panel skills-grid-wrapper">
+          <div className="relative bg-white dark:bg-sonic-panel">
             <div className="grid grid-cols-3">
-              {toolIcons.map((tool, i) => (
+              {toolIcons.map((tool) => (
                 <div
                   key={tool.name}
-                  className={`group relative grid aspect-square place-items-center border-neutral-200 bg-white p-4 transition-colors hover:bg-neutral-50 dark:border-sonic-border/70 dark:bg-sonic-panel dark:hover:bg-sonic-canvas [&:not(:nth-child(3n))]:border-r [&:nth-child(-n+18)]:border-b${i % 3 !== 2 && i < 18 ? ' intersection-cell' : ''}`}
+                  className="group relative grid aspect-square place-items-center border-neutral-200 bg-white p-4 transition-colors hover:bg-neutral-50 dark:border-sonic-border/70 dark:bg-sonic-panel dark:hover:bg-sonic-canvas [&:not(:nth-child(3n))]:border-r [&:nth-child(-n+18)]:border-b"
                   title={tool.name}
                   aria-label={tool.name}
                 >
@@ -335,7 +335,7 @@ function WorkSection() {
               <article key={project.id} className="rounded-lg border border-neutral-200 bg-white p-5 dark:border-sonic-border/70 dark:bg-sonic-panel">
                 <div className="flex items-start gap-4">
                   <div className="grid h-12 w-12 flex-shrink-0 place-items-center rounded-md border border-neutral-200 bg-white p-2 dark:border-sonic-border/70 dark:bg-sonic-panel">
-                    <img src={project.logo} alt="" className="max-h-8 max-w-8 rounded object-contain" />
+                    <img src={project.logo} alt="" className="max-h-8 max-w-8 object-contain" />
                   </div>
                   <div className="min-w-0">
                     <div className="flex items-start justify-between gap-3">

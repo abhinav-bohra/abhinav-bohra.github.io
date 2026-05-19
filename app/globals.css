@@ -28,7 +28,6 @@
 .section-frame {
   --frame-line: #e5e7eb;
   --frame-plus: #d1d5db;
-  --frame-bg: #ffffff;
   --frame-marker-inset: clamp(0.75rem, 2vw, 1.5rem);
   position: relative;
   background-color: #ffffff;
@@ -77,31 +76,33 @@
 .section-frame-inner::after {
   content: "";
   position: absolute;
-  top: calc(-1 * var(--frame-pt, 4rem) - 8px);
-  left: -8px;
-  right: -8px;
-  height: 17px;
+  top: calc(-1 * var(--frame-pt, 4rem) - 10px);
+  left: -10px;
+  right: -10px;
+  height: 21px;
   z-index: 2;
   pointer-events: none;
   background-image:
+    /* knockout squares on top — erase gridlines at both intersections */
     linear-gradient(var(--frame-bg), var(--frame-bg)),
     linear-gradient(var(--frame-bg), var(--frame-bg)),
+    /* plus arms below — only visible outside the knockout squares */
     linear-gradient(var(--frame-plus), var(--frame-plus)),
     linear-gradient(var(--frame-plus), var(--frame-plus)),
     linear-gradient(var(--frame-plus), var(--frame-plus)),
     linear-gradient(var(--frame-plus), var(--frame-plus));
   background-repeat: no-repeat;
   background-size:
-    5px 5px, 5px 5px,
-    16px 1px, 1px 16px,
-    16px 1px, 1px 16px;
+    8px 8px, 8px 8px,
+    20px 1px, 1px 20px,
+    20px 1px, 1px 20px;
   background-position:
     left 6px top 6px,
     right 6px top 6px,
-    left 0px top 8px,
-    left 8px top 0px,
-    right 0px top 8px,
-    right 8px top 0px;
+    left 0px top 10px,
+    left 10px top 0px,
+    right 0px top 10px,
+    right 9px top 0px;
 }
 
 .dark .section-frame {
@@ -176,37 +177,4 @@
   .dark .dark\:hover\:border-sonic-border:hover {
     border-color: #4a4a4a;
   }
-}
-
-/* Skills grid intersection markers */
-.skills-grid-wrapper {
-  --cell-bg: #ffffff;
-}
-.dark .skills-grid-wrapper {
-  --cell-bg: #13161f;
-}
-
-.intersection-cell::after {
-  content: "";
-  position: absolute;
-  width: 13px;
-  height: 13px;
-  right: -7px;
-  bottom: -7px;
-  z-index: 1;
-  pointer-events: none;
-  background-image:
-    linear-gradient(var(--cell-bg), var(--cell-bg)),
-    linear-gradient(var(--frame-plus, #d1d5db), var(--frame-plus, #d1d5db)),
-    linear-gradient(var(--frame-plus, #d1d5db), var(--frame-plus, #d1d5db));
-  background-repeat: no-repeat;
-  background-size: 5px 5px, 13px 1px, 1px 13px;
-  background-position: left 4px top 4px, left 0px top 6px, left 6px top 0px;
-}
-
-.intersection-cell:hover::after {
-  --cell-bg: #f9fafb;
-}
-.dark .intersection-cell:hover::after {
-  --cell-bg: #08090d;
 }
