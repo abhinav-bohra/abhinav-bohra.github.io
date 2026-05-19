@@ -49,7 +49,7 @@ export default function WorkPage() {
             <article key={project.id} className="rounded-lg border border-neutral-200 bg-neutral-50 p-5 dark:border-sonic-border/70 dark:bg-sonic-canvas">
               <div className="flex items-start gap-4">
                 <div className="grid h-12 w-12 flex-shrink-0 place-items-center rounded-md border border-neutral-200 bg-white dark:border-sonic-border/70 dark:bg-sonic-panel">
-                  <img src={project.logo} alt="" className="max-h-8 max-w-8 object-contain" />
+                  <img src={project.logo} alt="" className="max-h-8 max-w-8 object-contain opacity-75 dark:brightness-0 dark:invert dark:opacity-80" />
                 </div>
                 <div className="min-w-0">
                   <div className="flex items-start justify-between gap-3">
@@ -158,7 +158,7 @@ export default function WorkPage() {
               >
                 <div className="flex items-start gap-4">
                   <div className="grid h-12 w-12 flex-shrink-0 place-items-center rounded-md border border-neutral-200 bg-white dark:border-sonic-border/70 dark:bg-sonic-panel">
-                    <BookOpen className="h-5 w-5 text-neutral-500" />
+                    <img src={item.logo} alt="" className="max-h-8 max-w-8 object-contain" />
                   </div>
                   <div className="min-w-0">
                     <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">

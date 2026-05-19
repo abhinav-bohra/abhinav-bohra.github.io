@@ -5,7 +5,7 @@ import { experiences } from '@/data/experience'
 import { profile } from '@/data/profile'
 import { mlProjects, otherProjects, sdeProjects } from '@/data/projects'
 import { skills } from '@/data/skills'
-import { ArrowUpRight, BookOpen, Briefcase, Check, Code2, Github, Heart } from 'lucide-react'
+import { ArrowUpRight, BookOpen, Briefcase, Check, Code2, Github, GraduationCap, Heart, Trophy } from 'lucide-react'
 import { useEffect } from 'react'
 
 const toolIcons = [
@@ -76,7 +76,15 @@ function AboutSection() {
             </h1>
             <div className="mt-4 space-y-4 text-sm leading-7 text-neutral-600 dark:text-neutral-400">
               {profile.bio.map((paragraph) => (
-                <p key={paragraph}>{paragraph}</p>
+                <p key={paragraph}>
+                  {paragraph.includes("GGMU :)") ? (
+                    <>
+                      {paragraph.split("GGMU :)")[0]}
+                      <span className="text-rose-400 dark:text-rose-300">GGMU :)</span>
+                      {paragraph.split("GGMU :)")[1]}
+                    </>
+                  ) : paragraph}
+                </p>
               ))}
             </div>
           </div>
@@ -188,12 +196,12 @@ function SkillsSection() {
         </SectionHeading>
 
         <div className="grid gap-6 lg:grid-cols-[minmax(0,360px)_1fr] lg:items-stretch">
-          <div className="relative bg-white dark:bg-sonic-panel">
+          <div className="relative bg-white dark:bg-sonic-panel skills-grid-wrapper">
             <div className="grid grid-cols-3">
-              {toolIcons.map((tool) => (
+              {toolIcons.map((tool, i) => (
                 <div
                   key={tool.name}
-                  className="group relative grid aspect-square place-items-center border-neutral-200 bg-white p-4 transition-colors hover:bg-neutral-50 dark:border-sonic-border/70 dark:bg-sonic-panel dark:hover:bg-sonic-canvas [&:not(:nth-child(3n))]:border-r [&:nth-child(-n+18)]:border-b"
+                  className={`group relative grid aspect-square place-items-center border-neutral-200 bg-white p-4 transition-colors hover:bg-neutral-50 dark:border-sonic-border/70 dark:bg-sonic-panel dark:hover:bg-sonic-canvas [&:not(:nth-child(3n))]:border-r [&:nth-child(-n+18)]:border-b${i % 3 !== 2 && i < 18 ? ' intersection-cell' : ''}`}
                   title={tool.name}
                   aria-label={tool.name}
                 >
@@ -210,7 +218,10 @@ function SkillsSection() {
 
           <div className="grid gap-4 lg:h-full lg:grid-rows-[auto_1fr]">
             <div className="rounded-lg border border-neutral-200 bg-white p-5 dark:border-sonic-border/70 dark:bg-sonic-panel">
-              <h3 className="text-sm font-semibold">Achievements</h3>
+              <div className="flex items-center gap-2">
+                <Trophy className="h-4 w-4 text-neutral-500" />
+                <h3 className="text-sm font-semibold uppercase tracking-[0.14em] text-neutral-500">Achievements</h3>
+              </div>
               <ul className="mt-4 list-disc space-y-3 pl-5">
                 {skills.achievements.map((achievement) => (
                   <li key={achievement} className="pl-1 text-sm leading-6 text-neutral-600 dark:text-neutral-400">
@@ -220,7 +231,10 @@ function SkillsSection() {
               </ul>
             </div>
             <div className="flex flex-col rounded-lg border border-neutral-200 bg-white p-5 dark:border-sonic-border/70 dark:bg-sonic-panel">
-              <h3 className="text-sm font-semibold">Coursework</h3>
+              <div className="flex items-center gap-2">
+                <GraduationCap className="h-4 w-4 text-neutral-500" />
+                <h3 className="text-sm font-semibold uppercase tracking-[0.14em] text-neutral-500">Coursework</h3>
+              </div>
               <p className="mt-2 text-sm leading-6 text-neutral-600 dark:text-neutral-400">
                 Coursework across systems, AI, and broader leadership and communication tracks.
               </p>
@@ -281,7 +295,7 @@ function WorkSection() {
             <article key={project.id} className="rounded-lg border border-neutral-200 bg-neutral-50 p-5 dark:border-sonic-border/70 dark:bg-sonic-canvas">
               <div className="flex items-start gap-4">
                 <div className="grid h-12 w-12 flex-shrink-0 place-items-center rounded-md border border-neutral-200 bg-white dark:border-sonic-border/70 dark:bg-sonic-panel">
-                  <img src={project.logo} alt="" className="max-h-8 max-w-8 object-contain" />
+                  <img src={project.logo} alt="" className="max-h-8 max-w-8 object-contain opacity-75 dark:brightness-0 dark:invert dark:opacity-80" />
                 </div>
                 <div className="min-w-0">
                   <div className="flex items-start justify-between gap-3">
@@ -321,7 +335,7 @@ function WorkSection() {
               <article key={project.id} className="rounded-lg border border-neutral-200 bg-white p-5 dark:border-sonic-border/70 dark:bg-sonic-panel">
                 <div className="flex items-start gap-4">
                   <div className="grid h-12 w-12 flex-shrink-0 place-items-center rounded-md border border-neutral-200 bg-white p-2 dark:border-sonic-border/70 dark:bg-sonic-panel">
-                    <img src={project.logo} alt="" className="max-h-8 max-w-8 object-contain" />
+                    <img src={project.logo} alt="" className="max-h-8 max-w-8 rounded object-contain" />
                   </div>
                   <div className="min-w-0">
                     <div className="flex items-start justify-between gap-3">
@@ -390,7 +404,7 @@ function WorkSection() {
               >
                 <div className="flex items-start gap-4">
                   <div className="grid h-12 w-12 flex-shrink-0 place-items-center rounded-md border border-neutral-200 bg-white dark:border-sonic-border/70 dark:bg-sonic-panel">
-                    <BookOpen className="h-5 w-5 text-neutral-500" />
+                    <img src={item.logo} alt={item.course} className={`max-h-8 max-w-8 rounded object-contain${item.logo.includes('iit_kgp') ? ' dark:brightness-0 dark:invert' : ''}`} />
                   </div>
                   <div className="min-w-0">
                     <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">

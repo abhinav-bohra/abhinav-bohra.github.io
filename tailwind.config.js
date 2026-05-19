@@ -17,7 +17,7 @@ export default {
           surface: '#0d0f16',
           panel: '#13161f',
           elevated: '#1a1e2c',
-          border: '#1e5bb8',
+          border: '#3a3a3a',
         },
         slate: {
           950: '#0a0a0f',

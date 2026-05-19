@@ -47,7 +47,7 @@ export const mlProjects: MLProject[] = [
     endDate: "Jul 2022",
     description:
       "Created ECTSum dataset using Earnings Call Transcripts of publicly traded companies. Benchmarked with BigBird, SummaRuNNer, Longformer. Proposed FinBERT-T5 paraphraser with 13.3% ROUGE-2 gain and 8.5% less factual hallucination.",
-    publication: { venue: "EMNLP 2022 (Main Conference)", url: "https://arxiv.org/abs/2210.12467" },
+    publication: { venue: "EMNLP 2022 (Main Conference) - In association with Goldman Sachs", url: "https://arxiv.org/abs/2210.12467" },
     projectUrl: "https://github.com/rajdeep345/ECTSum",
     tags: ["Python", "PyTorch", "CUDA"],
   },
@@ -133,7 +133,7 @@ export const mlProjects: MLProject[] = [
   {
     id: "stock-sentiment",
     title: "Stock Price Movement Prediction using Sentiment Analysis",
-    logo: "./images/ml-projects/spp.jpg",
+    logo: "./images/ml-projects/spp.png",
     thumbnail: "./images/ml-projects/spp_img1.png",
     advisor: "Prof. Adway Mitra, Dept. of CSE, IIT Kharagpur",
     startDate: "Aug 2021",
@@ -309,14 +309,14 @@ export const otherProjects: OtherProject[] = [
     subtitle: "Algorithm for finding the convex hull of a finite set of points in the plane in O(N*log(N))",
     image: "gscan.png",
     tags: ["C"],
-    github: "https://github.com/abhinav-bohra/Graham-Scan",
+    github: "https://github.com/abhinav-bohra/Graham-Scan-Algorithm",
   },
   {
     title: "Ford Fulkerson",
     subtitle: "A method for computing maximum flow in a network using Edmonds-Karp algorithm",
     image: "ff.png",
     tags: ["C"],
-    github: "https://github.com/abhinav-bohra/Ford-Fulkerson",
+    github: "https://github.com/abhinav-bohra/Ford-Fulkerson-Algorithm",
   },
   {
     title: "Packet Sniffer",

@@ -23,6 +23,7 @@ export interface Teaching {
   course: string;
   period: string;
   bullets: string[];
+  logo: string;
 }
 
 export const skills: Skills = {
@@ -64,6 +65,7 @@ export const skills: Skills = {
       role: "Teaching Assistant",
       course: "Machine Learning, CS60050",
       period: "Jan 2023 - Apr 2023",
+      logo: "/images/teaching/iit_kgp.png",
       bullets: [
         "Facilitated discussions and provided clarifications on complex machine learning concepts to students",
         "Designed ML assignments and provided constructive feedback on problem-solving, algorithm selection, and code optimization",
@@ -73,6 +75,7 @@ export const skills: Skills = {
       role: "Teaching Assistant",
       course: "Compilers Lab, CS31003",
       period: "Aug 2022 - Nov 2022",
+      logo: "/images/teaching/iit_kgp.png",
       bullets: [
         "Coordinated lab sessions for a class of 120 students, overseeing the setup, assessment, and resolution of queries related to assignments",
       ],
@@ -81,6 +84,7 @@ export const skills: Skills = {
       role: "Student Mentor",
       course: "Student Welfare Group, IIT KGP",
       period: "Jul 2020 - Jun 2022",
+      logo: "/images/teaching/swg.png",
       bullets: [
         "Mentor for 5 junior batch students, offering guidance on academic and personal matters as their first point of contact",
       ],
@@ -89,6 +93,7 @@ export const skills: Skills = {
       role: "Subhead",
       course: "Business Club, IIT KGP",
       period: "Jul 2019 - Jun 2020",
+      logo: "/images/teaching/bclub.jpg",
       bullets: [
         "Speaker at biweekly knowledge sessions on machine learning algorithms such as Regression, Clustering, etc.",
       ],
@@ -122,9 +127,9 @@ export const skills: Skills = {
       "Dependable and Secure AI-ML",
     ],
     outOfDiscipline: [
+      "Transforming self to nurture leadership traits",
       "Positive Psychology",
       "Marketing and Market Research",
-      "Transforming self to nurture leadership traits",
       "Technology for special needs education",
       "German",
     ],
