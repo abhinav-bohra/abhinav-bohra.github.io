@@ -12,19 +12,22 @@
     @apply scroll-smooth;
   }
 
+  :root {
+    --frame-side-pad: clamp(1.25rem, 3vw, 2.5rem);
+  }
+
   body {
     @apply bg-white text-gray-900 dark:text-gray-100;
   }
 
   .dark body {
-    background-color: #070b1e;
+    background-color: #08090d;
   }
 }
 
 .section-frame {
   --frame-line: #e5e7eb;
   --frame-plus: #d1d5db;
-  --frame-side-pad: clamp(1.25rem, 3vw, 2.5rem);
   --frame-marker-inset: clamp(0.75rem, 2vw, 1.5rem);
   position: relative;
   background-color: #ffffff;
@@ -58,30 +61,26 @@
   background-size:
     1px 100%,
     1px 100%,
-    100% 1px;
+    100vw 1px;
 }
 
 .section-frame-inner::after {
   content: "";
-  position: absolute;
-  left: var(--frame-marker-inset);
-  right: var(--frame-marker-inset);
+  position: fixed;
+  left: 0;
+  right: 0;
   top: calc(-1 * var(--frame-pt, 4rem) - 0.375rem);
   z-index: 2;
-  height: 0.75rem;
-  width: auto;
-  background:
-    linear-gradient(var(--frame-plus), var(--frame-plus)) left center / 0.75rem 1px no-repeat,
-    linear-gradient(var(--frame-plus), var(--frame-plus)) left center / 1px 0.75rem no-repeat,
-    linear-gradient(var(--frame-plus), var(--frame-plus)) right center / 0.75rem 1px no-repeat,
-    linear-gradient(var(--frame-plus), var(--frame-plus)) right center / 1px 0.75rem no-repeat;
+  height: 1px;
+  width: 100vw;
+  background: var(--frame-line);
   pointer-events: none;
 }
 
 .dark .section-frame {
-  background-color: #070b1e;
-  --frame-line: rgb(30 91 184 / 0.42);
-  --frame-plus: rgb(30 91 184 / 0.7);
+  background-color: #08090d;
+  --frame-line: rgb(30 91 184 / 0.70);
+  --frame-plus: rgb(30 91 184 / 0.85);
 }
 
 @media (min-width: 768px) {
@@ -99,35 +98,35 @@
 
 @layer utilities {
   .dark .dark\:bg-sonic-canvas {
-    background-color: #070b1e;
+    background-color: #08090d;
   }
 
   .dark .dark\:bg-sonic-canvas\/90 {
-    background-color: rgb(7 11 30 / 0.9);
+    background-color: rgb(8 9 13 / 0.9);
   }
 
   .dark .dark\:bg-sonic-surface {
-    background-color: #0b1433;
+    background-color: #0d0f16;
   }
 
   .dark .dark\:bg-sonic-panel {
-    background-color: #101a3d;
+    background-color: #13161f;
   }
 
   .dark .dark\:bg-sonic-elevated {
-    background-color: #14275a;
+    background-color: #1a1e2c;
   }
 
   .dark .dark\:border-sonic-border {
-    border-color: #1e5bb8;
+    border-color: #3a3a3a;
   }
 
   .dark .dark\:border-sonic-border\/70 {
-    border-color: rgb(30 91 184 / 0.7);
+    border-color: #2a2a2a;
   }
 
   .dark .dark\:border-sonic-border\/80 {
-    border-color: rgb(30 91 184 / 0.8);
+    border-color: #303030;
   }
 
   .dark .dark\:text-sonic-border {
@@ -135,18 +134,18 @@
   }
 
   .dark .dark\:hover\:bg-sonic-canvas:hover {
-    background-color: #070b1e;
+    background-color: #08090d;
   }
 
   .dark .dark\:hover\:bg-sonic-panel:hover {
-    background-color: #101a3d;
+    background-color: #13161f;
   }
 
   .dark .dark\:hover\:bg-sonic-elevated:hover {
-    background-color: #14275a;
+    background-color: #1a1e2c;
   }
 
   .dark .dark\:hover\:border-sonic-border:hover {
-    border-color: #1e5bb8;
+    border-color: #4a4a4a;
   }
 }

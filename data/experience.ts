@@ -16,7 +16,7 @@ export const experiences: Experience[] = [
   {
     id: "amazon",
     company: "Amazon",
-    logo: "./images/experiences/amazon.svg",
+    logo: "/images/experiences/amazon.svg",
     role: "Applied Scientist Intern",
     team: "Advertising Technology",
     location: "Bangalore",
@@ -32,7 +32,7 @@ export const experiences: Experience[] = [
   {
     id: "ibm",
     company: "IBM Research AI",
-    logo: "./images/experiences/ibm.png",
+    logo: "/images/experiences/ibmai.png",
     role: "Research Intern",
     team: "IBM AI for Business Process Automation",
     location: "Bangalore",
@@ -47,7 +47,7 @@ export const experiences: Experience[] = [
   {
     id: "adobe",
     company: "Adobe Inc.",
-    logo: "./images/experiences/adobe.svg",
+    logo: "/images/experiences/adobe.svg",
     role: "Research Intern",
     team: "Big Data Experience Lab",
     location: "Bangalore",
@@ -65,7 +65,7 @@ export const experiences: Experience[] = [
   {
     id: "philips",
     company: "Philips India Ltd.",
-    logo: "./images/experiences/philips.svg",
+    logo: "/images/experiences/philips.svg",
     role: "Software Development Intern",
     team: "Philips Innovation Campus",
     location: "Bangalore",
@@ -82,7 +82,7 @@ export const experiences: Experience[] = [
   {
     id: "iima",
     company: "Indian Institute of Management, Ahmedabad",
-    logo: "./images/experiences/iima.svg",
+    logo: "/images/experiences/iima.svg",
     role: "Research Intern",
     team: "Department of Production and Quantitative Methods",
     location: "Ahmedabad",

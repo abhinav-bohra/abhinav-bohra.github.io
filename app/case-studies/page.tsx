@@ -1,5 +1,5 @@
-﻿import { Briefcase, ArrowUpRight } from 'lucide-react'
-import { caseStudies } from '@/data/caseStudies'
+﻿import { caseStudies } from '@/data/caseStudies'
+import { ArrowUpRight, Briefcase } from 'lucide-react'
 
 export const metadata = {
   title: 'Case Studies - Abhinav Bohra',
@@ -33,7 +33,7 @@ export default function CaseStudiesPage() {
     <section id="case-studies" className="section-frame px-5 py-16 md:py-20">
       <div className="section-frame-inner mx-auto max-w-6xl [--frame-pb:4rem] [--frame-pt:4rem] md:[--frame-pb:5rem] md:[--frame-pt:5rem]">
         <SectionHeading eyebrow="Case studies" title="Business and strategy decks">
-          <p>Selected case competitions and market research thesis </p>
+          <p>Case competitions and market research thesis </p>
         </SectionHeading>
 
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">

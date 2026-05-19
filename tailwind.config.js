@@ -13,15 +13,15 @@ export default {
       },
       colors: {
         sonic: {
-          canvas: '#070b1e',
-          surface: '#0b1433',
-          panel: '#101a3d',
-          elevated: '#14275a',
+          canvas: '#08090d',
+          surface: '#0d0f16',
+          panel: '#13161f',
+          elevated: '#1a1e2c',
           border: '#1e5bb8',
         },
         slate: {
-          950: '#0a0e27',
-          900: '#0f1117',
+          950: '#0a0a0f',
+          900: '#0f0f14',
         },
       },
     },

@@ -23,6 +23,7 @@ const toolIcons = [
   { name: "Flutter", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" },
   { name: "React", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
   { name: "Git", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+  { name: "FastAPI", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
 ]
 
 function SectionHeading({
@@ -92,7 +93,7 @@ export default function SkillsPage() {
             <div className="flex flex-col rounded-lg border border-neutral-200 bg-white p-5 dark:border-sonic-border/70 dark:bg-sonic-panel">
               <h3 className="text-sm font-semibold">Coursework</h3>
               <p className="mt-2 text-sm leading-6 text-neutral-600 dark:text-neutral-400">
-                Selected coursework across systems, AI, and broader leadership and communication tracks.
+                Coursework across systems, AI, and broader leadership and communication tracks.
               </p>
               <div className="mt-4 grid flex-1 gap-4 md:grid-cols-3">
                 {[

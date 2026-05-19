@@ -25,8 +25,8 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-slate-900 mt-24">
-      <div className="max-w-4xl mx-auto px-6 py-12">
+    <footer className="w-full border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-slate-900 px-5">
+      <div className="section-frame-inner mx-auto max-w-6xl py-12">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-8">
           <div className="flex items-center gap-5">
             {socialLinks.map((link) => {
@@ -46,7 +46,7 @@ export function Footer() {
             })}
           </div>
           <p className="text-xs text-gray-500 dark:text-gray-600">
-            © 2026 Abhinav Bohra
+            © {new Date().getFullYear()} Abhinav Bohra
           </p>
         </div>
       </div>
