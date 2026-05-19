@@ -1,5 +1,5 @@
-﻿import { Check } from 'lucide-react'
-import { experiences } from '@/data/experience'
+﻿import { experiences } from '@/data/experience'
+import { Check } from 'lucide-react'
 
 export const metadata = {
   title: 'Experience - Abhinav Bohra',
@@ -42,8 +42,7 @@ export default function ExperiencePage() {
       <div className="section-frame-inner mx-auto max-w-6xl [--frame-pb:4rem] [--frame-pt:4rem] md:[--frame-pb:6rem] md:[--frame-pt:6rem]">
         <SectionHeading eyebrow="Experience" title="Places I have worked and learned">
           <p>
-            A few internships and research roles where I contributed to applied ML, process mining, video understanding, and software
-            tools.
+            Problems, teams, and domains I learned from along the way.
           </p>
         </SectionHeading>
 

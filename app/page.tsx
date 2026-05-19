@@ -64,8 +64,8 @@ function Tag({ children }: { children: string }) {
 
 function AboutSection() {
   return (
-    <section id="about" className="section-frame px-5 py-16 pt-28 md:py-24 md:pt-32">
-      <div className="section-frame-inner mx-auto grid max-w-6xl gap-10 [--frame-pb:4rem] [--frame-pt:7rem] md:[--frame-pb:6rem] md:[--frame-pt:8rem] lg:grid-cols-[1fr_320px] lg:items-start">
+    <section id="about" className="section-frame px-5 py-16 pt-28 md:pt-32 md:pb-20">
+      <div className="section-frame-inner mx-auto grid max-w-6xl gap-10 [--frame-pb:4rem] [--frame-pt:7rem] md:[--frame-pb:5rem] md:[--frame-pt:8rem] lg:grid-cols-[1fr_320px] lg:items-start">
         <div>
           <div className="mb-10 max-w-3xl">
             <p className="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-neutral-500 dark:text-neutral-400">
@@ -128,8 +128,7 @@ function ExperienceSection() {
       <div className="section-frame-inner mx-auto max-w-6xl [--frame-pb:4rem] [--frame-pt:4rem] md:[--frame-pb:6rem] md:[--frame-pt:6rem]">
         <SectionHeading eyebrow="Experience" title="Places I have worked and learned">
           <p>
-            A few internships and research roles where I contributed to applied ML, process mining, video understanding, and software
-            tools.
+            Problems, teams, and domains I learned from along the way.
           </p>
         </SectionHeading>
 
@@ -288,7 +287,7 @@ function WorkSection() {
           <h3 className="text-sm font-semibold uppercase tracking-[0.14em] text-neutral-500">Research projects</h3>
         </div>
         <p className="mb-4 max-w-3xl text-sm leading-7 text-neutral-600 dark:text-neutral-400">
-          Research projects from the pre-ChatGPT era: when NLP actually had 11 distinct tasks and you couldn't just prompt your way to state-of-the-art
+          Research projects from the pre-ChatGPT era: when NLP actually had 11 distinct tasks and you couldn't just prompt your way to state-of-the-art.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
           {mlProjects.map((project) => (
@@ -327,7 +326,7 @@ function WorkSection() {
             <h3 className="text-sm font-semibold uppercase tracking-[0.14em] text-neutral-500">Software builds</h3>
           </div>
           <p className="mt-3 max-w-3xl text-sm leading-7 text-neutral-600 dark:text-neutral-400">
-            Software builds before 'vibe-coding' was a thing and Stack Overflow threads were sacred texts you bookmarked
+            Software builds before 'vibe-coding' was a thing and Stack Overflow threads were sacred texts you bookmarked.
           </p>
 
           <div className="mt-4 grid gap-4 md:grid-cols-2">
@@ -438,7 +437,7 @@ function CaseStudiesSection() {
     <section id="case-studies" className="section-frame px-5 py-16 md:py-20">
       <div className="section-frame-inner mx-auto max-w-6xl [--frame-pb:4rem] [--frame-pt:4rem] md:[--frame-pb:5rem] md:[--frame-pt:5rem]">
         <SectionHeading eyebrow="Case studies" title="Business and strategy decks">
-          <p>Case competitions and market research thesis </p>
+          <p>Case competitions and market research thesis. </p>
         </SectionHeading>
 
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">

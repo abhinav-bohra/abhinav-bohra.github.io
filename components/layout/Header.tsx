@@ -33,7 +33,7 @@ export function Header() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 w-full border-b border-neutral-200/80 bg-white/90 backdrop-blur dark:border-sonic-border/70 dark:bg-sonic-canvas/90 px-5">
-      <nav className="section-frame-inner mx-auto flex max-w-6xl items-center justify-between py-3 border-x border-neutral-200/80 dark:border-sonic-border/70">
+      <nav className="mx-auto flex max-w-6xl items-center justify-between py-3 px-5 border-x border-neutral-200/80 dark:border-sonic-border/70">
         <div className="hidden items-center gap-1 rounded-md border border-neutral-200 bg-white p-1 dark:border-sonic-border/70 dark:bg-sonic-panel md:flex">
           {navLinks.map((link) => (
             <a

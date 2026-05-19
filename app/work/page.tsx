@@ -1,8 +1,8 @@
 ﻿'use client'
 
-import { ArrowUpRight, BookOpen, Briefcase, Code2, ExternalLink, Github } from 'lucide-react'
-import { mlProjects, sdeProjects, otherProjects } from '@/data/projects'
+import { mlProjects, otherProjects, sdeProjects } from '@/data/projects'
 import { skills } from '@/data/skills'
+import { ArrowUpRight, BookOpen, Briefcase, Code2, Github } from 'lucide-react'
 
 function SectionHeading({
   eyebrow,
@@ -42,7 +42,7 @@ export default function WorkPage() {
           <h3 className="text-sm font-semibold uppercase tracking-[0.14em] text-neutral-500">Research projects</h3>
         </div>
         <p className="mb-4 max-w-3xl text-sm leading-7 text-neutral-600 dark:text-neutral-400">
-          Research projects from the pre-ChatGPT era: when NLP actually had 11 distinct tasks and you couldn't just prompt your way to state-of-the-art
+          Research projects from the pre-ChatGPT era: when NLP actually had 11 distinct tasks and you couldn't just prompt your way to state-of-the-art.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
           {mlProjects.map((project) => (
@@ -81,7 +81,7 @@ export default function WorkPage() {
             <h3 className="text-sm font-semibold uppercase tracking-[0.14em] text-neutral-500">Software builds</h3>
           </div>
           <p className="mt-3 max-w-3xl text-sm leading-7 text-neutral-600 dark:text-neutral-400">
-            Software builds before 'vibe-coding' was a thing and Stack Overflow threads were sacred texts you bookmarked
+            Software builds before 'vibe-coding' was a thing and Stack Overflow threads were sacred texts you bookmarked.
           </p>
 
           <div className="mt-4 grid gap-4 md:grid-cols-2">
