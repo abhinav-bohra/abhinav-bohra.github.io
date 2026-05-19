@@ -1,10 +1,10 @@
-﻿import type { Metadata } from 'next'
-import './globals.css'
+﻿import { Footer } from '@/components/layout/Footer'
 import { Header } from '@/components/layout/Header'
-import { Footer } from '@/components/layout/Footer'
+import type { Metadata } from 'next'
+import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Abhinav Bohra - Portfolio',
+  title: 'Abhinav Bohra',
   description: 'Full-stack engineer, ML researcher, and builder.',
 }
 

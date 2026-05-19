@@ -92,16 +92,16 @@
     linear-gradient(var(--frame-plus), var(--frame-plus));
   background-repeat: no-repeat;
   background-size:
-    6px 6px, 6px 6px,
+    5px 5px, 5px 5px,
     16px 1px, 1px 16px,
     16px 1px, 1px 16px;
   background-position:
-    left 5px top 5px,
-    right 5px top 5px,
+    left 6px top 6px,
+    right 6px top 6px,
     left 0px top 8px,
     left 8px top 0px,
     right 0px top 8px,
-    right 7px top 0px;
+    right 8px top 0px;
 }
 
 .dark .section-frame {
