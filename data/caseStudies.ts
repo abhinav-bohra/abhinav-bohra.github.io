@@ -18,7 +18,7 @@ export const caseStudies: CaseStudy[] = [
       "Assessed growth opportunities in untapped Indian rural Pharma market",
       "Formulated Business Model for Sanofi's 'Prayas' initiative and re-evaluated product mix",
     ],
-    pdfFile: "./files/Technice-Team_Invictus.pdf",
+    pdfFile: "/files/Technice-Team_Invictus.pdf",
   },
   {
     id: "openiit",
@@ -30,7 +30,7 @@ export const caseStudies: CaseStudy[] = [
       "Proposed a recession-proof business model for the time frame of SoftBank's investments",
       "Probed the timing of Vision Fund's Launch given warnings of an impending recession",
     ],
-    pdfFile: "./files/OpenIIT-Team_Enigma.pdf",
+    pdfFile: "/files/OpenIIT-Team_Enigma.pdf",
   },
   {
     id: "necc",
@@ -38,13 +38,13 @@ export const caseStudies: CaseStudy[] = [
     award: "Silver Medalist",
     date: "Aug 2019",
     bullets: [],
-    pdfFile: "./files/NECC-Team_Invictus.pdf",
+    pdfFile: "/files/NECC-Team_Invictus.pdf",
   },
   {
     id: "mmr",
     title: "Marketing & Market Research",
     date: "April 2022",
     bullets: [],
-    pdfFile: "./files/MMR-Team_18.pdf",
+    pdfFile: "/files/MMR-Team_18.pdf",
   },
 ];
