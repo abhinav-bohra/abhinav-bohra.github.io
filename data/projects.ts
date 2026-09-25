@@ -40,7 +40,7 @@ export const mlProjects: MLProject[] = [
   {
     id: "ectsum",
     title: "ECTSum: Bullet Point Summarization of Long Earnings Call Transcripts",
-    logo: "./images/ml-projects/gs.png",
+    logo: "/images/ml-projects/gs.png",
     thumbnail: "./images/ml-projects/gs_1.png",
     association: "Goldman Sachs",
     startDate: "Apr 2022",
@@ -54,7 +54,7 @@ export const mlProjects: MLProject[] = [
   {
     id: "vgl-gan",
     title: "Video Game Level Generation using DCGAN",
-    logo: "./images/ml-projects/vgl.png",
+    logo: "/images/ml-projects/vgl.png",
     thumbnail: "./images/ml-projects/vgl_img1.png",
     advisor: "Prof. Adway Mitra, Centre of Excellence in AI, IIT Kharagpur",
     startDate: "Aug 2022",
@@ -68,7 +68,7 @@ export const mlProjects: MLProject[] = [
   {
     id: "coeusearch",
     title: "Neural File Search Engine",
-    logo: "./images/ml-projects/nfs.png",
+    logo: "/images/ml-projects/nfs.png",
     thumbnail: "./images/ml-projects/nfs_1.png",
     advisor: "Prof. Palash Dey, Dept. of CSE, IIT Kharagpur",
     startDate: "Aug 2022",
@@ -81,7 +81,7 @@ export const mlProjects: MLProject[] = [
   {
     id: "mna-similarity",
     title: "Multilingual News Article Similarity",
-    logo: "./images/ml-projects/mna.png",
+    logo: "/images/ml-projects/mna.png",
     thumbnail: "./images/ml-projects/mna_img1.png",
     advisor: "Prof. Pawan Goyal, Dept. of CSE, IIT Kharagpur",
     startDate: "Jan 2022",
@@ -94,7 +94,7 @@ export const mlProjects: MLProject[] = [
   {
     id: "efl-acos",
     title: "Entailment as Few Shot Learner For ACOS Quad Extraction Task",
-    logo: "./images/ml-projects/efl.png",
+    logo: "/images/ml-projects/efl.png",
     thumbnail: "./images/ml-projects/efl_img1.png",
     advisor: "Prof. Pawan Goyal, Dept. of CSE, IIT Kharagpur",
     startDate: "Dec 2021",
@@ -107,7 +107,7 @@ export const mlProjects: MLProject[] = [
   {
     id: "acos-generative",
     title: "Investigating Generative Approaches For ACOS Quad Extraction Task",
-    logo: "./images/ml-projects/acos.png",
+    logo: "/images/ml-projects/acos.png",
     thumbnail: "./images/ml-projects/acos_img1.png",
     advisor: "Prof. Pawan Goyal, Dept. of CSE, IIT Kharagpur",
     startDate: "Aug 2021",
@@ -120,7 +120,7 @@ export const mlProjects: MLProject[] = [
   {
     id: "emotion-multitask",
     title: "Multitasking Framework for Emotional Analysis",
-    logo: "./images/ml-projects/emo.png",
+    logo: "/images/ml-projects/emo.png",
     thumbnail: "./images/ml-projects/emo_img1.png",
     advisor: "Prof. Pawan Goyal, Dept. of CSE, IIT Kharagpur",
     startDate: "Jan 2021",
@@ -133,7 +133,7 @@ export const mlProjects: MLProject[] = [
   {
     id: "stock-sentiment",
     title: "Stock Price Movement Prediction using Sentiment Analysis",
-    logo: "./images/ml-projects/spp.png",
+    logo: "/images/ml-projects/spp.png",
     thumbnail: "./images/ml-projects/spp_img1.png",
     advisor: "Prof. Adway Mitra, Dept. of CSE, IIT Kharagpur",
     startDate: "Aug 2021",
@@ -149,7 +149,7 @@ export const sdeProjects: SDEProject[] = [
   {
     id: "have",
     title: "Social eCommerce WebApp",
-    logo: "./images/sde-projects/have_logo.png",
+    logo: "/images/sde-projects/have_logo.png",
     images: ["have_img3.png", "have_img2.png", "have_img1.png", "have_img4.png", "have_img5.png"],
     advisor: "Prof. Shamik Sural, Dept. of CSE, IIT Kharagpur",
     startDate: "Jan 2021",
@@ -163,7 +163,7 @@ export const sdeProjects: SDEProject[] = [
   {
     id: "p2p-chat",
     title: "Peer-2-Peer Chat Application",
-    logo: "./images/sde-projects/p2pchat_logo.png",
+    logo: "/images/sde-projects/p2pchat_logo.png",
     images: ["p2pchat_img1.png"],
     advisor: "Prof. Sandip Chakraborty, Dept. of CSE, IIT Kharagpur",
     startDate: "Jan 2021",
@@ -176,7 +176,7 @@ export const sdeProjects: SDEProject[] = [
   {
     id: "that",
     title: "THAT Hearing Assistance & Transcription",
-    logo: "./images/sde-projects/that_logo.png",
+    logo: "/images/sde-projects/that_logo.png",
     images: [
       "that_img5.png",
       "that_img1.png",
@@ -200,7 +200,7 @@ export const sdeProjects: SDEProject[] = [
   {
     id: "growfast",
     title: "GrowFast, Employee Management System",
-    logo: "./images/sde-projects/gf_logo.png",
+    logo: "/images/sde-projects/gf_logo.png",
     images: ["gf_img1.png", "gf_img2.png", "gf_img3.png", "gf_img4.png", "gf_img5.png"],
     advisor: "Prof. Sudip Misra, Dept. of CSE, IIT Kharagpur",
     startDate: "Jan 2020",
